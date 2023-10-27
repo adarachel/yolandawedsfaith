@@ -2,7 +2,11 @@
 
 .info-image {
     margin-top: 2em;
+    max-width: 80%;
+    border: 2px solid #052659;
+    margin-left: 2em;
 }
+
 
 .countdown-timer {
     display: inline-block;
