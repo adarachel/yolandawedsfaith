@@ -2,155 +2,378 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Y+F</title>
+    <meta charset="utf-8">
+    <title>Yolanda weds Faith</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <!-- 
-    - custom css link
-  -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/info.css">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> 
 
-    <!-- 
-    - google font link
-  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body id="top">
-
-    <!-- 
-    - #HEADER
-  -->
-
-    <header class="header" data-header>
-        <div class="container">
-
-            <a href="#" class="logo">
-                ❤️ Y+F
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand d-block d-lg-none">
+            <h1 class="font-secondary text-white mb-n2">Yolanda <span class="text-primary">&</span> Faith</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav ml-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#story" class="nav-item nav-link">Story</a>
+                <a href="#gallery" class="nav-item nav-link">Gallery</a>
+            </div>
+            <a href="index.html" class="navbar-brand mx-5 d-none d-lg-block">
+                <h1 class="font-secondary text-white mb-n2">Yolanda <span class="text-primary">&</span> Faith</h1>
             </a>
-
-            <button class="nav-toggle-btn" data-nav-toggle-btn>
-                <ion-icon name="menu-outline" class="open"></ion-icon>
-                <ion-icon name="close-outline" class="close"></ion-icon>
-            </button>
-
-            <nav class="navbar">
-                <div class="container">
-                    <ul class="navbar-list">
-
-                        <li>
-                            <a href="index.html" class="navbar-link" data-navbar-link>Home</a>
-                        </li>
-
-                        <li>
-                            <a href="#info" class="navbar-link" data-navbar-link>Information</a>
-                        </li>
-
-                        <li>
-                            <a href="#service" class="navbar-link" data-navbar-link>Menu</a>
-                        </li>
-
-                        <li>
-                            <a href="#blog" class="navbar-link" data-navbar-link>RSVP</a>
-                        </li>
-
-                        <li>
-                            <a href="#newsletter" class="navbar-link" data-navbar-link>Gallery</a>
-                        </li>
-
-                    </ul>
-                </div>
-            </nav>
-
-            <button class="btn btn-secondary">
-                <span>Wish Us Well</span>
-
-                <ion-icon name="chevron-forward-outline"></ion-icon>
-            </button>
-
+            <div class="navbar-nav mr-auto py-0">
+                <a href="#family" class="nav-item nav-link">Family</a>
+                <a href="#event" class="nav-item nav-link">Event</a>
+                <a href="#rsvp" class="nav-item nav-link">RSVP</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+            </div>
         </div>
-    </header>
+    </nav>
+    <!-- Navbar End -->
 
 
-
-
-
-    <main>
-        <article>
-
-            <!-- 
-        - #HERO
-      -->
-
-            <section class="hero" id="home">
-
-                <div class="container">
-
-                    <figure class="hero-banner">
-                        <img src="assets/images/envelope1.png" alt="Illustration art" loading="lazy" class="w-100">
-                    </figure>
-
-                    <div class="hero-content">
-                        <p class="section-text">
-                            TOGETHER WITH THEIR FAMILIES,
-                        </p>
-                        <h2 class="h1 hero-title">Yolanda & Faith</h2><br>
-                        <p class="section-text">
-                            WARMLY INVITE YOU TO THE<br> CEREMONY OF THEIR WEDDING.
-                        </p>
-
-                        <audio id="bgMusic" preload="auto">
-                            <source src="assets/your_song.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio>
-
-                        <button id="musicToggle" class="btn btn-primary">
-                            <span>Play Music</span>
-                        </button>
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5 pb-5" id="home">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item position-relative active" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="img/carousel1.webp" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Yolanda & Faith</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">We're getting married! </h3>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
-
-            </section>
-        </article>
-    </main>
-
-    <section id="info">
-        <div class="container">
-            <h2 class="info-heading">COUNTDOWN TO OUR <br> SPECIAL DAY
-            </h2>
-            <div class="countdown-timer">
-                <span id="days">00</span><br />
-                <span id="hours">00</span><br>
-                <span id="minutes">00</span><br>
-                <span id="seconds">00</span>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="img/carousel3.webp" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Yolanda & Faith</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">We're getting married!</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="img/carousel4.webp" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Yolanda & Faith</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">We're getting married!</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="img/carousel5.webp" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Yolanda & Faith</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">We're getting married!</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="img/carousel6.webp" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Yolanda & Faith</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">We're getting married!</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="info-image">
-                <img src="assets/images/bg2.jpg" alt="" width="100%">
+            <a class="carousel-control-prev justify-content-start" href="#header-carousel" data-slide="prev">
+                <div class="btn btn-primary px-0" style="width: 68px; height: 68px;">
+                    <span class="carousel-control-prev-icon mt-3"></span>
+                </div>
+            </a>
+            <a class="carousel-control-next justify-content-end" href="#header-carousel" data-slide="next">
+                <div class="btn btn-primary px-0" style="width: 68px; height: 68px;">
+                    <span class="carousel-control-next-icon mt-3"></span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- Story Start -->
+    <div class="container-fluid py-5" id="story">
+        <div class="container pt-5 pb-3">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Story</h6>
+                <h1 class="font-secondary display-4">Our Journey (so far)</h1>
+                <i class="far fa-heart text-dark"></i>
             </div>
-            <div class="info-text">
-
+            <div class="container timeline position-relative p-0">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid mr-md-3" src="img/story5.png" alt="">
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2">The Introduction</h4>
+                            <p class="m-0">In February 2022, Faith and Yolanda were introduced through mutual friends. Faith's friend in Calgary and Yolanda's friend in England separately mentioned them to each other. Intrigued by the coincidence, Faith decided to learn more.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                            <h4 class="mb-2">How it Began</h4>
+                            <p class="m-0"> Yolanda, visiting friends in Calgary, was told by her friend's husband about Faith. After a quick Instagram search, Yolanda discovered they were already mutual friends and shared connections in England. Eager to know more, Yolanda texted her English friend about Faith. To her surprise, she woke up the next morning to a text message from Faith.</p>                        </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <img class="img-fluid ml-md-3" src="img/story1.png" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid mr-md-3" src="img/story2.png" alt="">
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2">The Proposal</h4>
+                            <p class="m-0">YOLANDA: The dinner before the proposal... I pride myself as someone who is never caught off guard. Lol, on this day, I had no idea of his plans for that evening.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                            <h4 class="mb-2">The Enagagement</h4><br>
+                            <p class="m-0">
+                                Long story short: here we are!<br><br> Our wedding hashtag is: #BecomingtheBanjokos
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <img class="img-fluid ml-md-3" src="img/story3.png" alt="">
+                    </div>
+                </div>
             </div>
-    </section>
+        </div>
+    </div>
+    <!-- Story End -->
 
-    <!-- 
-    - custom js link
-  -->
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/music.js"></script>
-    <script src="assets/js/countdown.js"></script>
 
-    <!-- 
-    - ionicon link
-  -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Event Start -->
+    <div class="container-fluid py-5" id="event">
+        <div class="container py-5">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Schedule</h6>
+                <h1 class="font-secondary display-4">Our Wedding Event</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                    <h5 class="font-weight-normal text-muted mb-3 pb-3">Colors of the Day:<br> Mint & Magenta. <br><br>
+                         Please, dress in a way that dignifies our God, Jehovah (1 Peter 3:4).
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 border-right border-primary">
+                    <div class="text-center text-md-right mr-md-3 mb-4 mb-md-0">
+                        <img class="img-fluid mb-4" src="img/carousel1.webp" alt="">
+                        <h4 class="mb-3">Wedding Talk</h4>
+                        <p class="mb-2">NOVEMBER 30, 2023</p>
+                        <p class="mb-2">Kingdom Hall of Jehovah's Witnesses, Lagos, Nigeria</p>
+                        <p class="mb-0">10:00AM - 12:00PM</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="text-center text-md-left ml-md-3">
+                        <img class="img-fluid mb-4" src="img/carousel5.webp" alt="">
+                        <h4 class="mb-3">Reception</h4>
+                        <p class="mb-2">DECEMBER 2, 2023</p>
+                        <p class="mb-2">Balmoral Hall, Kudirat Abiola Way, Lagos, Nigeria</p>
+                        <p class="mb-0">1:00PM - 6:00PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Event End -->
+
+    <!-- Embed IG-->
+
+    <video width="320" height="430" controls>
+        <source src="img/couplevideo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Gallery Start -->
+    <!-- <div class="container-fluid bg-gallery" id="gallery" style="padding: 120px 0; margin: 90px 0;">
+        <div class="section-title position-relative text-center" style="margin-bottom: 120px;">
+            <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Gallery</h6>
+            <h1 class="font-secondary display-4 text-white">Our Photo Gallery</h1>
+            <i class="far fa-heart text-white"></i>
+        </div>
+        <div class="owl-carousel gallery-carousel">
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-1.jpg" alt="">
+                <a href="img/gallery-1.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-2.jpg" alt="">
+                <a href="img/gallery-2.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-3.jpg" alt="">
+                <a href="img/gallery-3.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-4.jpg" alt="">
+                <a href="img/gallery-4.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-5.jpg" alt="">
+                <a href="img/gallery-5.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-6.jpg" alt="">
+                <a href="img/gallery-6.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+        </div>
+    </div> -->
+    <!-- Gallery End -->
+
+
+    <!-- RSVP Start -->
+    <div class="container-fluid py-5" id="rsvp">
+        <div class="container py-5">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">RSVP</h6>
+                <h1 class="font-secondary display-4">Join Our Party</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-sm-6">
+                                    <input type="text" class="form-control bg-secondary border-0 py-4 px-3" placeholder="Your Name"/>
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <input type="email" class="form-control bg-secondary border-0 py-4 px-3" placeholder="Your Email"/>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-sm-6">
+                                    <select class="form-control bg-secondary border-0" style="height: 52px;">
+                                        <option>Number of Guest</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <select class="form-control bg-secondary border-0" style="height: 52px;">
+                                        <option>I'm Attending</option>
+                                        <option>All Events</option>
+                                        <option>Wedding Party</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control bg-secondary border-0 py-2 px-3" rows="5" placeholder="Message" required="required"></textarea>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary font-weight-bold py-3 px-5" type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- RSVP End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white py-5" id="contact" style="margin-top: 90px;">
+        <div class="container text-center py-5">
+            <div class="section-title position-relative text-center">
+                <h1 class="font-secondary display-3 text-white">Thank You</h1>
+                <i class="far fa-heart text-white"></i>
+            </div>
+            <div class="d-flex justify-content-center mb-4">
+                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-lg btn-outline-light btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="d-flex justify-content-center py-2">
+                
+                <p class="text-white" href="#">+012 345 6789</p>
+            </div>
+            <p class="m-0">&copy; <a class="text-primary" href="#"></a>Site Developed By <a class="text-primary" href="https://adarachel.netlify.app">AdaRachel.</a>
+            </p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-outline-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
